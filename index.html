@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Голосование</title>
+  <style>
+    body {
+      background-image: url("background.jpg");
+      background-size: cover;
+      background-position: center center;
+      transition: background-image 2s ease-in-out;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #395442;
+    }
+
+    .subtitle {
+      font-size: 1px;
+      margin-top: 10px;
+      color: #245e32;
+    }
+
+    .button {
+      background-color: #13bfb4;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #3e8e41;
+    }
+
+    @media screen and (max-width: 480px) {
+      .button {
+        padding: 15px 30px;
+        font-size: 16px;
+        border-radius: 20px;
+      }
+      .title {
+        font-size: 20px;
+        color: #395442;
+      }
+      .subtitle {
+        font-size: 10px;
+        margin-top: 10px;
+        color: #245e32;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Выберите участника</div>
+    <a href="#" onclick="vote('1.html')" class="button">Проголосовать за №1</a>
+    <a href="#" onclick="vote('1.html')" class="button">Проголосовать за №2</a>
+    <a href="#" onclick="vote('1.html')" class="button">Проголосовать за №3</a>
+    <a href="#" onclick="vote('1.html')" class="button">Проголосовать за №4</a>
+    <disv class="subtitle">Ваши данные обеспечены конфиденциальностью, анонимностью и надежной защитой.</div>
+
+    <script>
+      function vote(url) {
+        // изменяем фоновое изображение на размытое
+        document.body.style.backgroundImage = "url('1.jpg')";
+        
+        // изменяем текст кнопки на "Загрузка..."
+        event.target.innerText = 'Обработка...';
+        
+        // задержка на 2 секунды
+        setTimeout(function() {
+          window.location.href = url;
+        }, 3000);
+      }
+    </script>
+  </div>
+</body>
+</html>

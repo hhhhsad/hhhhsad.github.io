@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Проверка на робота</title>
+  <link rel="shortcut icon" href="icon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border: 2px solid #000;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0px 0px 10px #000000;
+    }
+    input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(2);
+      -webkit-appearance: none;
+      border: 2px solid #000;
+      border-radius: 3px;
+      padding: 2px;
+      outline: none;
+    }
+    input[type="checkbox"]:checked {
+      background-color: #000;
+      border: none;
+      color: #fff;
+    }
+  </style>
+  <script>
+    function redirectToYoutube() {
+      window.location.replace("http://surl.li/gqszh");
+    }
+  </script>
+</head>
+<body>
+  <label>
+    <input type="checkbox" name="robotcheck" onclick="redirectToYoutube()" />
+    <span style="font-size: 20px;">Я не робот</span>
+  </label>
+</body>
+</html>
