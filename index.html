@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Telegram Style</title>
+  <title>Telegram Voting</title>
   <style>
         body {
             background-image: url("bg.png");
@@ -62,7 +62,7 @@ body {
   color: white;
   font-size: 14px;
   padding: 8px 16px;
-  border-radius: 20px;
+  border-radius: 20	px;
   transition-duration: 0.4s;
   font-family: 'Roboto', sans-serif;
 }
@@ -177,6 +177,7 @@ body {
 }
 
 
+/* Медиа-запрос для мобильных устройств, включая айфоны */
 @media (max-width: 767px) {
   .voting-block__choice {
     font-size: 16px;
@@ -186,23 +187,85 @@ body {
   }
   
   .voting-block {
-	  max-width: 320px;
-	  width: 100%;
-	  padding: 0;
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	  justify-content: center;
-	  aspect-ratio: 1 / 1.2;
-	  margin: 48px auto;
-	  border-radius: 17px;
-	  background-color: #262525;
-      font-family: 'Roboto', sans-serif;;
-	}
+    max-width: 320px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1.2;
+    margin: 48px auto;
+    border-radius: 17px;
+    background-color: #262525;
+    font-family: 'Roboto', sans-serif;
+  }
 
   .voting-block__vote-btn {
     font-size: 16px;
     padding: 12px 24px;
+	font-family: 'Roboto', sans-serif;
+  }
+}
+
+/* Медиа-запрос для планшетов */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .voting-block__choice {
+    font-size: 20px;
+    padding: 16px 32px;
+    margin: 8px;
+	font-family: 'Roboto', sans-serif;
+  }
+  
+  .voting-block {
+    max-width: 720px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1.2;
+    margin: 64px auto;
+    border-radius: 21px;
+    background-color: #262525;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .voting-block__vote-btn {
+    font-size: 20px;
+    padding: 16px 32px;
+	font-family: 'Roboto', sans-serif;
+  }
+}
+
+/* Медиа-запрос для остальных устройств */
+@media (min-width: 1025px) {
+  .voting-block__choice {
+    font-size: 24px;
+    padding: 20px 40px;
+    margin: 12px;
+	font-family: 'Roboto', sans-serif;
+  }
+  
+  .voting-block {
+    max-width: 960px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1.2;
+    margin: 96px auto;
+    border-radius: 25px;
+    background-color: #262525;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .voting-block__vote-btn {
+    font-size: 24px;
+    padding: 20px 40px;
 	font-family: 'Roboto', sans-serif;
   }
 }
@@ -225,7 +288,7 @@ body {
   </div>
   <h2 class="voting-block__title">Выберите участника</h2>
   <div class="voting-block__choices">
-      <button class="voting-block__choice">Участник  №1</button>
+      <button class="voting-block__choice">Участник №1</button>
       <button class="voting-block__choice">Участник №2</button>
       <button class="voting-block__choice">Участник №3</button>
       <button class="voting-block__choice">Участник №4</button>
