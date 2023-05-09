@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Telegram Voting</title>
+  <title>Telegram Style</title>
   <style>
         body {
             background-image: url("bg.png");
@@ -62,7 +62,7 @@ body {
   color: white;
   font-size: 14px;
   padding: 8px 16px;
-  border-radius: 20	px;
+  border-radius: 20px;
   transition-duration: 0.4s;
   font-family: 'Roboto', sans-serif;
 }
@@ -177,7 +177,7 @@ body {
 }
 
 
-/* Медиа-запрос для мобильных устройств, включая айфоны */
+/* Для мобильных */
 @media (max-width: 767px) {
   .voting-block__choice {
     font-size: 16px;
@@ -187,19 +187,19 @@ body {
   }
   
   .voting-block {
-    max-width: 320px;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 1 / 1.2;
-    margin: 48px auto;
-    border-radius: 17px;
-    background-color: #262525;
-    font-family: 'Roboto', sans-serif;
-  }
+	  max-width: 320px;
+	  width: 100%;
+	  padding: 0;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  aspect-ratio: 1 / 1.2;
+	  margin: 48px auto;
+	  border-radius: 17px;
+	  background-color: #262525;
+      font-family: 'Roboto', sans-serif;;
+	}
 
   .voting-block__vote-btn {
     font-size: 16px;
@@ -208,7 +208,7 @@ body {
   }
 }
 
-/* Медиа-запрос для планшетов */
+/* Для планшетов */
 @media (min-width: 768px) and (max-width: 1024px) {
   .voting-block__choice {
     font-size: 20px;
@@ -218,19 +218,19 @@ body {
   }
   
   .voting-block {
-    max-width: 720px;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 1 / 1.2;
-    margin: 64px auto;
-    border-radius: 21px;
-    background-color: #262525;
-    font-family: 'Roboto', sans-serif;
-  }
+	  max-width: 720px;
+	  width: 100%;
+	  padding: 0;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  aspect-ratio: 1 / 1.2;
+	  margin: 64px auto;
+	  border-radius: 21px;
+	  background-color: #262525;
+      font-family: 'Roboto', sans-serif;;
+	}
 
   .voting-block__vote-btn {
     font-size: 20px;
@@ -239,29 +239,29 @@ body {
   }
 }
 
-/* Медиа-запрос для остальных устройств */
+/* Для остальных устройств */
 @media (min-width: 1025px) {
   .voting-block__choice {
-    font-size: 24px;
-    padding: 20px 40px;
-    margin: 12px;
+    font-size: 18px;
+    padding: 16px 32px;
+    margin: 10px;
 	font-family: 'Roboto', sans-serif;
   }
   
   .voting-block {
-    max-width: 960px;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 1 / 1.2;
-    margin: 96px auto;
-    border-radius: 25px;
-    background-color: #262525;
-    font-family: 'Roboto', sans-serif;
-  }
+  max-width: 400px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1.3;
+  margin: 48px auto;
+  border-radius: 17px;
+  background-color: #262525;
+  font-family: 'Roboto', sans-serif;
+}
 
   .voting-block__vote-btn {
     font-size: 24px;
